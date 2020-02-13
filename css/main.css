@@ -9,6 +9,7 @@ html, body {
 body {
   font-family: "Montserrat", sans-serif;
   padding: 2rem;
+  color: #000;
 }
 
 header, footer {
@@ -16,6 +17,7 @@ header, footer {
   margin-left: -999rem;
   margin-right: -999rem;
   padding: 1rem 999rem;
+  color: #fff;
 }
 
 header {
@@ -58,6 +60,11 @@ code {
   margin-bottom: 3rem;
 }
 
+.bg-for-light-elements {
+  background-color: #000;
+  width: 50%;
+}
+
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -65,10 +72,14 @@ code {
 
 /* Styling for the in-text link */
 .in-text-link {
+  color: #000;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fee16d;
+  text-decoration-color: #fee16d;
 }
 
 .in-text-link:hover, .in-text-link:active {
-  text-decoration: none;
+  background-color: #fee16d;;
 }
 
 /* Styling for the navigation button */
@@ -76,19 +87,13 @@ code {
   display: inline-block;
   padding: 0.6rem;
   border-radius: 4px;
-  border: none;
+  border: 2px solid #000;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
   margin: 0.5em 0.5em;
   min-width: 10em;
   max-width: 12em;
-}
-
-.link-nav:hover, .link-nav:focus {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #fee16d;
-  text-decoration-color: #fee16d;
 }
 
 .link-nav {
@@ -98,29 +103,41 @@ code {
   width: 12em;
 }
 
-nav:hover, .button-nav:focus {
-
+.link-nav:hover, .link-nav:focus, .selected {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fee16d;
+  text-decoration-color: #fee16d;
 }
 
-.selected {
-
+#sub-nav a {
+  color: #000;
 }
+
+#sub-nav a:hover, #sub-nav a:focus {
+  text-decoration: none;
+  background-color: #fee16d;
+}
+
 
 /* Styling for the other buttons */
 .button-neutral {
-
+  background-color: #000;
+  color: #fff;
 }
 
 .button-neutral:hover, .button-neutral:focus {
-
+  color: #fee16d;
+  border-color: #fee16d;
 }
 
 .button-cta {
-
+  background-color: #fee16d;
+  border-color: #fee16d;
 }
 
 .button-cta:hover, .button-CTA:focus {
-
+background-color: #fff;
+border-color: #000;
 }
 
 .input-label {
@@ -146,7 +163,7 @@ nav:hover, .button-nav:focus {
   TEXT ELEMENTS -------------------
 */
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+
 }
 
 h1 {

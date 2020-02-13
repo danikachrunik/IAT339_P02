@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P01 - Grainbow - Style Guide</title>
+    <title>Sunnup - Style Guide</title>
 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -17,22 +17,26 @@
 
     <header>
 
-      <h1>Sunnup</h1>
+      <h1>Sunnup - Style Guide</h1>
 
       <img src="Images/Sun.png" alt="logo" class="logo"/>
 
-      <p>Style Guide</p>
-
       <nav class="container nav-flex">
-        <a class="link-nav btn flex-item" href="#interactive_elements">Interactive Elements</a>
-        <a class="link-nav btn flex-item" href="#text_elements">Text Elements</a>
-        <a class="link-nav btn flex-item" href="#image_elements">Image Elements</a>
-        <a class="link-nav btn flex-item" href="#combined_elements">Combined Elements</a>
-        <a class="link-nav btn flex-item" href="product_listing.html">Product Listing Template</a>
-        <a class="link-nav btn flex-item" href="checkout.html">Checkout Template</a>
-        <a class="link-nav btn flex-item" href="#citations">Citations</a>
+        <a class="link-nav btn flex-item" href="#">Order</a>
+        <a class="link-nav btn flex-item" href="#">News</a>
+        <a class="link-nav btn flex-item" href="#">Contact</a>
       </nav>
     </header>
+
+    <section id="sub-nav">
+      <a class="link-nav btn flex-item" href="#interactive_elements">Interactive Elements</a>
+      <a class="link-nav btn flex-item" href="#text_elements">Text Elements</a>
+      <a class="link-nav btn flex-item" href="#image_elements">Image Elements</a>
+      <a class="link-nav btn flex-item" href="#combined_elements">Combined Elements</a>
+      <!--<a class="link-nav btn flex-item" href="product_listing.html">Product Listing Template</a>
+      <a class="link-nav btn flex-item" href="checkout.html">Checkout Template</a>-->
+      <a class="link-nav btn flex-item" href="#citations">Citations</a>
+    </section>
 
       <!-- INTERACTIVE ELEMENTS SECTION // -->
       <section id="interactive_elements">
@@ -67,7 +71,9 @@
           <code>&lt;a href="#" class="link-nav btn"&gt;Page Name&lt;/a&gt;</code>
 
           <h4>Rendered element:</h4>
-          <a class="link-nav btn" href="#">Nav Link</a>
+          <div class="bg-for-light-elements">
+            <a class="link-nav btn" href="#">Nav Link</a>
+          </div>
 
         </section>
 
@@ -255,7 +261,7 @@
 
           <h4>Rendered element:</h4>
           <a class="img-link" href="#">
-            <img src="images/bowl_1.jpg" alt="A delicious and healthy meal in a bowl">
+            <img src="Images/crepe.jpg" alt="A delicious crepe">
           </a>
 
         </section>
@@ -381,37 +387,6 @@
       <!-- COMBINED ELEMENTS SECTION // -->
       <section id="combined_elements">
         <h2>Combined Elements</h2>
-
-        <!-- Main Nav -->
-        <section class="element">
-          <h3>Main Navigation</h3>
-
-          <h4>CSS selector:</h4>
-          <p>nav</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;nav&gt;<br>
-              <span class="code_tab"></span>&lt;a class="link-nav btn" href="#">Home&lt;/a&gt;<br>
-              <span class="code_tab"></span>&lt;a class="link-nav btn" href="#">Menu&lt;/a&gt;<br>
-              <span class="code_tab"></span>&lt;a class="link-nav btn" href="#">Hours and Location&lt;/a&gt;<br>
-              <span class="code_tab"></span>&lt;a class="link-nav btn" href="#">Events&lt;/a&gt;<br>
-              <span class="code_tab"></span>&lt;a class="link-nav btn" href="#">Cart&lt;/a&gt;<br>
-              <span class="code_tab"></span>&lt;a class="link-nav btn" href="#">Contact Us&lt;/a&gt;<br>
-            &lt;/nav&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <nav class="container nav-flex">
-            <a class="link-nav btn flex-item" href="#">Home</a>
-            <a class="link-nav btn flex-item" href="#">Menu</a>
-            <a class="link-nav btn flex-item" href="#">Hours and Location</a>
-            <a class="link-nav btn flex-item" href="#">Events</a>
-            <a class="link-nav btn flex-item" href="#">Cart</a>
-            <a class="link-nav btn flex-item" href="#">Contact Us</a>
-          </nav>
-
-        </section>
 
         <!-- Product Listing -->
         <section class="element">
@@ -564,10 +539,8 @@
         <h2>Citations</h2>
 
         <ul>
-          <li>Cabin and Cabin Sketch [Fonts]. Designed by Impallari Type. Retrieved from: <a class="in-text-link" target="_blank" href="https://fonts.google.com/specimen/Cabin">fonts.google.com/specimen/Cabin</a></li>
-          <li>Saveur [Image]. Retrieved from: <a class="in-text-link" target="_blank" href="https://www.saveur.com/grain-bowls/">https://www.saveur.com/grain-bowls/</a></li>
-          <li>food52 [Image]. Retrieved from: <a class="in-text-link" target="_blank" href="https://food52.com/blog/12840-how-to-make-a-meal-on-10">https://food52.com/blog/12840-how-to-make-a-meal-on-10</a></li>
-          <li>Chatelaine [Image]. Retrieved from: <a class="in-text-link" target="_blank" href="https://www.chatelaine.com/recipes/recipe-collections/dinner-plan-healthy-grain-bowls/">https://www.chatelaine.com/recipes/recipe-collections/dinner-plan-healthy-grain-bowls/</a></li>
+          <li>Montserrat [Fonts]. Designed by Julia Ulanovsky at ZkySky. Retrieved from: <a class="in-text-link" target="_blank" href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat">Google Fonts</a></li>
+
         </ul>
 
       </footer>
