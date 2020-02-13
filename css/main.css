@@ -1,12 +1,5 @@
-@font-face { /* source: https://css-tricks.com/snippets/css/using-font-face/ */
-  font-family: 'Gordita';
-  src: url('Font/Gordita Bold.otf');
-  src: url('Font/Gordita Regular.otf');
-}
-
 * {
   box-sizing: border-box;
-  font-family: "Gordita", sans-serif;
 }
 
 html, body {
@@ -14,7 +7,7 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 2rem;
 }
 
@@ -154,10 +147,6 @@ nav:hover, .button-nav:focus {
 */
 h1, h2, h3, h4, h5, h6 {
   color: #fff;
-}
-
-h1, h2 {
-  font-family: sans-serif;
 }
 
 h1 {
