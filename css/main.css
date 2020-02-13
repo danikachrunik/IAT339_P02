@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; /*prevent scroll bars */
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+header, footer {
+  /* source: https://css-tricks.com/full-browser-width-bars/ */
+  margin-left: -999rem;
+  margin-right: -999rem;
+  padding: 1rem 999rem;
+}
+
+header {
+  margin-top: -999rem;
+  padding-top: 999rem;
+  margin-bottom: 4rem;
+}
+
+footer {
+  margin-bottom: -3rem;
+  padding-bottom: 3rem;
+}
+
+footer>h2 {
+
+}
+
+footer>ul {
+
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  display: block;
+  background-color: #fafafa;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.code_tab {
+  margin: 1.5em;
+}
+
+.element, .payment-form, .cart, .product {
+  padding: 0 2rem 2rem 2rem;
+  margin-bottom: 3rem;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the in-text link */
+.in-text-link {
+}
+
+.in-text-link:hover, .in-text-link:active {
+  text-decoration: none;
+}
+
+/* Styling for the navigation button */
+.btn {
+  display: inline-block;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  margin: 0.5em 0.5em;
+  min-width: 10em;
+  max-width: 12em;
+}
+
+.link-nav {
+  text-align: center;
+  max-height: 3em;
+  width: 12em;
+}
+
+.link-nav:hover, .button-nav:focus {
+
+}
+
+.selected {
+
+}
+
+/* Styling for the other buttons */
+.button-neutral {
+
+}
+
+.button-neutral:hover, .button-neutral:focus {
+
+}
+
+.button-cta {
+
+}
+
+.button-cta:hover, .button-CTA:focus {
+
+}
+
+.input-label {
+
+}
+
+.text-box {
+  padding: 0.2rem;
+  margin-left: 0.8rem;
+}
+
+.radio-select, .checkbox, select {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.img-link:hover, img-link:focus {
+  opacity:0.5;
+}
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+h1, h2, h3, h4, h5, h6 {
+}
+
+h1, h2 {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+p, ol, ul, .price {
+
+}
+
+p {
+  max-width: 36em;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/*
+  IMAGE Elements -------------------
+*/
+
+img {
+  width: 100%;
+  max-width: 36rem;
+}
+
+/* Source: https://www.w3schools.com/howto/howto_css_image_center.asp */
+.product-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+.product {
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.payment-form, .cart {
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 48em;
+}
+
+form>div {
+  max-height: 6em;
+  margin-top: 1em;
+}
+
+/*
+  FLEXBOX -------------------
+  source: https://jonibologna.com/blog/flexbox-cheatsheet
+*/
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+.flex-item {
+  -webkit-flex: 1 1 12em;
+   -ms-flex: 1 1 12em;
+   flex: 1 1 12em;
+}
+
+.nav-flex {
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+@media (min-width: 44em) {
+  nav.container {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
