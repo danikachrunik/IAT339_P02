@@ -2,35 +2,56 @@
   box-sizing: border-box;
 }
 
-html, body {
-  overflow-x: hidden; /*prevent scroll bars */
-}
-
 body {
   font-family: "Montserrat", sans-serif;
-  padding: 2rem;
   color: #000;
 }
 
+
+/*
+  Header and Footer -------------------
+*/
 header, footer {
-  /* source: https://css-tricks.com/full-browser-width-bars/ */
-  margin-left: -999rem;
-  margin-right: -999rem;
-  padding: 1rem 999rem;
   color: #fff;
+  background-color: #000;
+  padding: 2em;
 }
 
 header {
-  margin-top: -999rem;
-  padding-top: 999rem;
   margin-bottom: 4rem;
-  background-color: #000;
+  /* sourse: http://docs.layerswp.com/doc/how-to-make-slider-and-widget-backgrounds-responsive/ */
+  background-image: url("../images/fries.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 40rem;
 }
 
-footer {
-  margin-bottom: -3rem;
-  padding-bottom: 3rem;
+.nav-bar {
   background-color: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 6rem;
+  z-index: 5;
+}
+
+.header-title {
+  background-color: #000;
+  display: inline-block;
+  padding: 0.01em 0.1em;
+  position: relative;
+  top: 30rem;
+}
+
+.header-logo {
+  max-width: 30%;
+  padding-top: 1em;
+}
+
+.header-logo > img {
+  max-height: 100%;
 }
 
 #citations a {
@@ -41,10 +62,27 @@ footer {
   color: #000;
 }
 
-/*
-  Code block styling -------------------
-*/
 
+/*
+  Navigation -------------------
+*/
+.link-nav {
+  color: #fff;
+  text-align: center;
+  max-height: 3em;
+  width: 12em;
+  text-decoration: none;
+  margin: 2em;
+}
+
+.link-nav:hover, .link-nav:focus, .selected {
+  border-bottom: 4px solid #fee16d;
+}
+
+
+/*
+  Code block -------------------
+*/
 code {
   display: block;
   background-color: #fafafa;
@@ -89,25 +127,12 @@ code {
   padding: 0.6rem;
   border-radius: 4px;
   border: 2px solid #000;
-  text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.5s;
   margin: 0.5em 0.5em;
   min-width: 10em;
   max-width: 12em;
-}
-
-.link-nav {
-  color: #fff;
-  text-align: center;
-  max-height: 3em;
-  width: 12em;
-}
-
-.link-nav:hover, .link-nav:focus, .selected {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #fee16d;
-  text-decoration-color: #fee16d;
+  text-decoration: none;
 }
 
 #sub-nav a {
@@ -229,7 +254,6 @@ img {
 /*
   COMBINED ELEMENTS -------------------
 */
-
 .product {
   max-width: 30em;
   margin-left: auto;
@@ -246,6 +270,7 @@ form>div {
   max-height: 6em;
   margin-top: 1em;
 }
+
 
 /*
   FLEXBOX -------------------
