@@ -250,6 +250,18 @@ display: flex;
 
 }
 
+/*Sun-burst left*/
+.sun-burst-left {
+width: 15%;
+height: 15%;
+}
+
+/*Sun-burst right*/
+.sun-burst-right {
+  width: 15%;
+  height: 15%;
+}
+
 .gallery {
   display: flex;
   justify-content: center;
