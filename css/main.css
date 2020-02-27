@@ -247,6 +247,51 @@ form>div {
   margin-top: 1em;
 }
 
+/*fxing burst images*/
+
+.burst_fix {
+display: flex;
+
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+}
+
+/*gallery content*/
+
+.gallery-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/*gallery image resize*/
+
+.gallery1 {
+width: 32%;
+height: 32%;
+}
+
+.gallery2 {
+width: 32%;
+height: 32%;
+}
+
+.gallery3 {
+width: 32%;
+height: 32%;
+}
+
+/*gallery image fit*/
+
+.gallery-image-fit {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*
   FLEXBOX -------------------
   source: https://jonibologna.com/blog/flexbox-cheatsheet
