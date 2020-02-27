@@ -17,13 +17,12 @@ body {
 }
 
 /*footer container*/
- .Footer {
+ footer {
   display: flex;
   padding-top: 10%;
  }
 
  /*footer links*/
-
  .nav-links-footer {
   color: #FEE16D;
   font-weight: 500;
@@ -45,13 +44,11 @@ a:hover {
 }
 
 /*instagram */
-
 .insta {
 width: 10%;
 }
 
 /*facebook*/
-
 .face {
   width: 10%;
 }
