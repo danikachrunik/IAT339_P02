@@ -1,0 +1,106 @@
+/*
+  STYLING 
+*/
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+
+}
+
+/*Fixed header*/
+.nav-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 115px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+/*The logo*/
+.logo-height {
+  height: 50%;
+}
+
+/*navigation links*/
+.nav-links {
+  color: #FEE16D;
+  font-weight: 500;
+  font-size: 20px;
+  color: #1F3746;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links > a {
+	 padding-right: 15px;
+	 text-decoration: none;
+	 color: white;
+}
+
+/*hovering navigation link*/
+a:hover {
+  color: #FEE16D;
+}
+
+/*highlight selected link*/
+.nav-links .current {
+  color: #FEE16D;
+}
+
+/*shopping cart */
+.cart {
+	height: 30px;
+}
+
+
+/*opening image*/
+.opening-image {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+/*slogan on top of opening image */
+.first-image-slogan {
+  width: 333px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 519px;
+  margin-left: 20px;
+}
+
+
+/*uplifting taste buds sologan*/
+.questions {
+font-weight: 700;
+color: white;
+position: absolute;
+top: 519px;
+font-size: 17px;
+}
+/*
+uplifiting text size*/
+.questions-size {
+  margin-left: 20px;
+}
+
+/*Intro text1*/
+h1 {
+  padding-left: 20px;
+}
+
+/*Intro text2*/
+h2 {
+  padding-left: 20px;
+  padding-bottom: 42px;
+}
+
+
