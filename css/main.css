@@ -7,9 +7,16 @@ body {
   color: #000;
 }
 
+/* wrapper for body content so it doesn't go edge to edge like the header */
+.content {
+  padding: 1em;
+  max-width: 60rem;
+  margin: auto;
+}
+
 
 /*
-  Header and Footer -------------------
+  Header and Footer --------------------------------------------------
 */
 header, footer {
   color: #fff;
@@ -18,7 +25,6 @@ header, footer {
 }
 
 header {
-  margin-bottom: 4rem;
   /* sourse: http://docs.layerswp.com/doc/how-to-make-slider-and-widget-backgrounds-responsive/ */
   background-image: url("../images/fries.jpg");
   background-position: center;
@@ -76,6 +82,7 @@ header {
 }
 
 .link-nav:hover, .link-nav:focus, .selected {
+  /* https://css-tricks.com/styling-underlines-web/ */
   border-bottom: 4px solid #fee16d;
 }
 
@@ -227,7 +234,7 @@ p {
 }
 
 .price {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /*
@@ -258,6 +265,23 @@ img {
   max-width: 30em;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.menu-section {
+  margin-top: 6rem;
+}
+
+.menu-section h3 {
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #ccc;
+}
+
+.flex-menu {
+  -webkit-flex: 1 1 12em;
+  -ms-flex: 1 1 12em;
+  flex: 1 1 12em;
 }
 
 .payment-form, .cart {
@@ -297,8 +321,8 @@ form>div {
 
 .flex-item {
   -webkit-flex: 1 1 12em;
-   -ms-flex: 1 1 12em;
-   flex: 1 1 12em;
+  -ms-flex: 1 1 12em;
+  flex: 1 1 12em;
 }
 
 .nav-flex {
