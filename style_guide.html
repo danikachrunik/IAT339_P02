@@ -35,7 +35,7 @@
     </header>
 
     <div class="content">
-      
+
       <section id="sub-nav">
         <a class="btn flex-item" href="#interactive_elements">Interactive Elements</a>
         <a class="btn flex-item" href="#text_elements">Text Elements</a>
@@ -396,7 +396,7 @@
         <section id="combined_elements">
           <h2>Combined Elements</h2>
 
-          <!-- Product Listing -->
+          <!-- PRODUCT LISTING -->
           <section class="element">
             <h3>Product Listing</h3>
 
@@ -422,9 +422,9 @@
               <img class="product-img" src="images/soup.jpg" alt="A healthy bowl of soup with all your selected toppings">
             </div>
 
-          </section>
+          </section><!-- // PRODUCT LISTING -->
 
-          <!-- Payment Form -->
+          <!-- PAYMENT FORM -->
           <section class="element">
             <h3>Payment Form</h3>
 
@@ -446,11 +446,69 @@
             <h4>Rendered element:</h4>
 
             <section class="payment-form">
-              <h3>Payment</h3>
+              <h2>Payment</h2>
 
               <form class="container">
+                <!-- source: https://learn.shayhowe.com/html-css/building-forms/ -->
+
+                <h4>Shipping Information</h4>
+
                 <div class="flex-item">
-                  <h5>Card Type:</h5>
+                  <label class="input-label">First & Last Name
+                    <input type="text" name="first-last-name" class="text-box" placeholder="First Name Last Name">
+                  </label>
+                </div>
+
+                <div class="flex-item">
+                  <label class="input-label">Email Address
+                    <input type="email" name="email-address" class="text-box" placeholder="you@example.com">
+                  </label>
+                </div>
+
+                <div class="flex-item">
+                  <label class="input-label">Address
+                    <input type="text" name="address" class="text-box" placeholder="1234 your street">
+                  </label>
+
+                  <label class="input-label">Apt Number
+                    <input type="number" name="apt-number" class="text-box" placeholder="1234">
+                  </label>
+                </div>
+
+                <!-- source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup -->
+                <div class="flex-item">
+                  <label class="input-label">City
+                    <select id="city-select">
+                      <optgroup label="AB">
+                        <option>Calgary</option>
+                        <option>Edmonton</option>
+                      </optgroup>
+                      <optgroup label="BC">
+                        <option>Burnaby</option>
+                        <option>Surrey</option>
+                        <option>Vancouver</option>
+                      </optgroup>
+                      <optgroup label="ON">
+                        <option>Hamilton</option>
+                        <option>Ottawa</option>
+                        <option>Toronto</option>
+                      </optgroup>
+                  </select>
+                  </label>
+
+                  <label class="input-label">Province
+                    <select id="province-select">
+                    	<option value="AB">Alberta</option>
+                    	<option value="BC">British Columbia</option>
+                    	<option value="ON">Ontario</option>
+                    </select>
+                  </label>
+                </div>
+
+                <h4>Payment Method</h4>
+
+                <div class="flex-item">
+                  <h5>Card Type</h5>
                   <label class="input-label">
                     <input type="radio" name="opt" class="radio-select" value="visa" checked>Visa
                   </label>
@@ -465,25 +523,25 @@
                 </div>
 
                 <div class="flex-item">
-                  <label class="input-label">Name on Card:
+                  <label class="input-label">Name on Card
                     <input type="text" name="textbox-example" class="text-box" placeholder="Cardholder Name">
                   </label>
                 </div>
 
                 <div class="flex-item">
-                  <label class="input-label">Card Number:
+                  <label class="input-label">Card Number
                     <input type="text" name="textbox-example" class="text-box" placeholder="0000 0000 0000 0000">
                   </label>
                 </div>
 
                 <div class="flex-item">
-                  <label class="input-label">Expiry Date:
+                  <label class="input-label">Expiry Date
                     <input type="text" name="textbox-example" class="text-box" placeholder="month / year">
                   </label>
                 </div>
 
                 <div class="flex-item">
-                  <label class="input-label">CCV:
+                  <label class="input-label">CCV
                     <input type="text" name="textbox-example" class="text-box" placeholder="000">
                   </label>
                 </div>
@@ -497,16 +555,16 @@
 
                 <div class="flex-item">
                   <button class="button-neutral btn">Clear form</button>
-                  <button class="button-cta btn">Pay Now</button>
+                  <button class="button-cta btn">Place Order</button>
                 </div>
 
               </form>
 
             </section>
 
-          </section>
+          </section><!-- // PAYMENT FORM -->
 
-          <!-- Checkout Cart -->
+          <!-- CHECKOUT CART -->
           <section class="element">
             <h3>Checkout Cart</h3>
 
@@ -529,29 +587,40 @@
             <h4>Rendered element:</h4>
 
             <section class="cart">
-              <h4>Your Cart</h4>
-              <p><a class="in-text-link" href="#">Thing 1</a> <span class="price">$12.00</span></p>
-              <p><a class="in-text-link" href="#">Thing 2</a> <span class="price">$9.00</span></p>
-              <p><a class="in-text-link" href="#">Thing 3</a> <span class="price">$4.00</span></p>
-              <p>Total <span class="price">$25.00</span></p>
+              <h2>Your Order</h2>
+
+              <ol class="order-summary">
+                <li><a class="in-text-link" href="#">Thing 1</a> <span class="price">$12.00</span></li>
+                <li><a class="in-text-link" href="#">Thing 2</a> <span class="price">$9.00</span></li>
+                <li><a class="in-text-link" href="#">Thing 3</a> <span class="price">$4.00</span></li>
+                <li>Sub Total <span class="price">$25.00</span></p>
+                <li>Tax <span class="price">$1.25</span></p>
+                <li class="bold-text">Total <span class="price">$26.25</span></p>
+              </ol>
+
               <button class="button-neutral btn">Clear Cart</button>
               <button class="button-cta btn">Continue</button>
             </section>
 
-          </section>
+          </section><!-- // CHECKOUT CART -->
 
         </section><!-- // COMBINED ELEMENTS SECTION -->
 
-
-        <footer id="citations">
+        <!-- CITATIONS -->
+        <section id="citations">
           <h2>Citations</h2>
-
           <ul>
             <li>Montserrat [Fonts]. Designed by Julia Ulanovsky at ZkySky. Retrieved from: <a class="in-text-link" target="_blank" href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat">Google Fonts</a></li>
 
           </ul>
+        </section><!-- // CITATIONS SECTION -->
 
-        </footer>
+        <!-- FOOTER -->
+        <footer>
+          <a href="index.html" class="header-logo">
+            <img src="images/logo.png" alt="sunnup logo">
+          </a>
+        </footer><!-- // FOOTER -->
 
       </div><!-- end of content -->
 

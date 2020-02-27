@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnup - Your Cart</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div class="nav-bar container">
+        <a href="index.html" class="header-logo">
+          <img src="images/logo.png" alt="sunnup logo">
+        </a>
+
+        <nav>
+          <a class="link-nav" href="#">Menu</a>
+          <a class="link-nav" href="#">News</a>
+          <a class="link-nav" href="#">Contact</a>
+          <a class="link-nav selected" href="#">Cart</a>
+        </nav>
+      </div>
+
+      <h1 class="header-title">Order Summary</h1>
+
+    </header>
+
+    <div class="content">
+
+      <!-- CART // -->
+      <section class="cart">
+        <h2>Your Order</h2>
+
+        <ol class="order-summary">
+          <li><a class="in-text-link" href="#">Thing 1</a> <span class="price">$12.00</span></li>
+          <li><a class="in-text-link" href="#">Thing 2</a> <span class="price">$9.00</span></li>
+          <li><a class="in-text-link" href="#">Thing 3</a> <span class="price">$4.00</span></li>
+          <li>Sub Total <span class="price">$25.00</span></p>
+          <li>Tax <span class="price">$1.25</span></p>
+          <li class="bold-text">Total <span class="price">$26.25</span></p>
+        </ol>
+
+        <button class="button-neutral btn">Clear Cart</button>
+        <button class="button-cta btn">Continue</button>
+      </section><!-- // CART -->
+
+      <!-- PAYMENT FORM // -->
+      <section class="payment-form">
+        <h2>Payment</h2>
+
+        <form class="container">
+          <!-- source: https://learn.shayhowe.com/html-css/building-forms/ -->
+
+          <h4>Shipping Information</h4>
+
+          <div class="flex-item">
+            <label class="input-label">First & Last Name
+              <input type="text" name="first-last-name" class="text-box" placeholder="First Name Last Name">
+            </label>
+          </div>
+
+          <div class="flex-item">
+            <label class="input-label">Email Address
+              <input type="email" name="email-address" class="text-box" placeholder="you@example.com">
+            </label>
+          </div>
+
+          <div class="flex-item">
+            <label class="input-label">Address
+              <input type="text" name="address" class="text-box" placeholder="1234 your street">
+            </label>
+
+            <label class="input-label">Apt Number
+              <input type="number" name="apt-number" class="text-box" placeholder="1234">
+            </label>
+          </div>
+
+          <!-- source: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup -->
+          <div class="flex-item">
+            <label class="input-label">City
+              <select id="city-select">
+                <optgroup label="AB">
+                  <option>Calgary</option>
+                  <option>Edmonton</option>
+                </optgroup>
+                <optgroup label="BC">
+                  <option>Burnaby</option>
+                  <option>Surrey</option>
+                  <option>Vancouver</option>
+                </optgroup>
+                <optgroup label="ON">
+                  <option>Hamilton</option>
+                  <option>Ottawa</option>
+                  <option>Toronto</option>
+                </optgroup>
+            </select>
+            </label>
+
+            <label class="input-label">Province
+              <select id="province-select">
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="ON">Ontario</option>
+              </select>
+            </label>
+          </div>
+
+          <h4>Payment Method</h4>
+
+          <div class="flex-item">
+            <h5>Card Type</h5>
+            <label class="input-label">
+              <input type="radio" name="opt" class="radio-select" value="visa" checked>Visa
+            </label>
+
+            <label class="input-label">
+              <input type="radio" name="opt" class="radio-select" value="mastercard">Mastercard
+            </label>
+
+            <label class="input-label">
+              <input type="radio" name="opt" class="radio-select" value="amex">amex
+            </label>
+          </div>
+
+          <div class="flex-item">
+            <label class="input-label">Name on Card
+              <input type="text" name="textbox-example" class="text-box" placeholder="Cardholder Name">
+            </label>
+          </div>
+
+          <div class="flex-item">
+            <label class="input-label">Card Number
+              <input type="text" name="textbox-example" class="text-box" placeholder="0000 0000 0000 0000">
+            </label>
+          </div>
+
+          <div class="flex-item">
+            <label class="input-label">Expiry Date
+              <input type="text" name="textbox-example" class="text-box" placeholder="month / year">
+            </label>
+          </div>
+
+          <div class="flex-item">
+            <label class="input-label">CCV
+              <input type="text" name="textbox-example" class="text-box" placeholder="000">
+            </label>
+          </div>
+
+          <div class="flex-item">
+            <label class="input-label">
+              <input class="checkbox" type="checkbox" name="save-card">
+              Save card
+            </label>
+          </div>
+
+          <div class="flex-item">
+            <button class="button-neutral btn">Clear form</button>
+            <button class="button-cta btn">Place Order</button>
+          </div>
+
+        </form>
+
+      </section>
+
+    </section><!-- // PAYMENT FORM -->
+
+    </div><!-- end of content -->
+
+  </body>
+
+</html>
