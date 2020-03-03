@@ -304,6 +304,7 @@ height: 32%;
 
 .specialities {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
