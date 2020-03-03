@@ -306,6 +306,12 @@ height: 32%;
   display: flex;
   align-items: center;
 }
+
+/*second image on the homepage*/
+.second-image {
+  height: 100%;
+  width: 100%;
+}
 /*
   FLEXBOX -------------------
   source: https://jonibologna.com/blog/flexbox-cheatsheet
