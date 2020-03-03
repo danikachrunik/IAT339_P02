@@ -10,8 +10,8 @@ body {
 /* wrapper for body content so it doesn't go edge to edge like the header */
 .content {
   padding: 1em;
-  max-width: 60rem;
-  margin: auto;
+  /*max-width: 60rem;
+  margin: auto;*/
 }
 
 /*
@@ -298,6 +298,13 @@ height: 32%;
 .gallery-image-fit {
   display: flex;
   justify-content: space-between;
+}
+
+/*three specialities on homepage*/
+
+.specialities {
+  display: flex;
+  align-items: center;
 }
 /*
   FLEXBOX -------------------
