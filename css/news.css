@@ -7,3 +7,22 @@ body {
 	display: flex;
 	text-align: center;
 }
+
+/*news heading*/ 
+
+h2 {
+	padding-left: 1em;
+	padding-bottom: 0em;
+}
+
+/*news subtittle date*/
+
+p {
+	padding-left: 1em;
+}
+
+.french-toast-para {
+	padding-left: 1em;
+	max-width: 73em;
+	text-align: center;
+}
