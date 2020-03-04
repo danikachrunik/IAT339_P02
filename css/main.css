@@ -168,7 +168,7 @@ p {
 
 img {
   width: 100%;
-  max-width: 36rem;
+/*  max-width: 36rem;*/
 }
 
 .logo {
@@ -307,11 +307,7 @@ height: 32%;
   align-items: center;
 }
 
-/*second image on the homepage*/
-.second-image {
-  height: 100%;
-  width: 100%;
-}
+
 /*
   FLEXBOX -------------------
   source: https://jonibologna.com/blog/flexbox-cheatsheet
