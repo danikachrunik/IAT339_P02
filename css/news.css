@@ -13,12 +13,14 @@ body {
 h2 {
 	padding-left: 1em;
 	padding-bottom: 0em;
+	text-align: center;
 }
 
 /*news subtittle date*/
 
-p {
+.date1 {
 	padding-left: 1em;
+	text-align: center;
 }
 
 .french-toast-para {
