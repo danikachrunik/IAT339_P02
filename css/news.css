@@ -1,0 +1,9 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.healthy {
+	display: flex;
+	text-align: center;
+}
