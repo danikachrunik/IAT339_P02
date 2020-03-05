@@ -30,7 +30,7 @@ header {
 
 #header-logo {
   max-width: 12rem;;
-  margin: 0.5rem 0 0 0;
+  margin: 1rem;
 }
 
 #header-logo > img {
@@ -89,10 +89,6 @@ header {
 
   .header-right {
     float: right;
-  }
-
-  #header-logo {
-    float: left;
   }
 
   .link-nav:hover, .link-nav:focus, .selected {
