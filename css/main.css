@@ -8,11 +8,14 @@ body {
 }
 
 /* wrapper for body content so it doesn't go edge to edge like the header */
+
+
 .content {
   padding: 1em;
   /*max-width: 60rem;
   margin: auto;*/
 }
+
 
 /*
   Code block -------------------
@@ -262,6 +265,29 @@ height: 15%;
   height: 15%;
 }
 
+
+/* 3 specialities fixed*/
+
+.family-style {
+padding-right: 5%;
+font-size: 2vw;
+}
+
+/*burger row */
+.burger-row {
+  display: flex;
+}
+
+/*text column */
+.text-col {
+  width: 50%;
+}
+
+/*burger image fixed*/
+.grab-fix {
+  width: 50%;
+}
+
 .gallery {
   display: flex;
   justify-content: center;
@@ -305,6 +331,7 @@ height: 32%;
 .specialities {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 
@@ -348,5 +375,18 @@ height: 32%;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+  .content {
+    padding-top: 70px;
+  }
+  .header-title {
+    font-size: 2em;
   }
 }
