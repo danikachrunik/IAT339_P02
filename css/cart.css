@@ -1,3 +1,10 @@
+
+
+header {
+  /* source: http://docs.layerswp.com/doc/how-to-make-slider-and-widget-backgrounds-responsive/ */
+  background-image: url("../images/order.jpg");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -167,9 +174,9 @@ p {
   font-weight: 400;
 }
 
-/*.price {
+.price {
   float: right;
-}*/
+}
 
 /*
   IMAGE Elements -------------------
@@ -195,17 +202,16 @@ img {
 /*
   COMBINED ELEMENTS -------------------
 */
-/*.product {
+.product {
   max-width: 30em;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
-}*/
+}
 
 /* menu styling */
-
-/*.menu-section {
+.menu-section {
   margin-top: 6rem;
 }
 
@@ -218,14 +224,14 @@ img {
   -webkit-flex: 1 1 12em;
   -ms-flex: 1 1 12em;
   flex: 1 1 12em;
-}*/
+}
 
 /*payment form styling */
-/*.payment-form, .cart {
+.payment-form, .cart {
   padding: 1rem;
   margin: 1rem auto;
   max-width: 48em;
-}*/
+}
 
 form>div {
   max-height: 6em;
@@ -233,12 +239,12 @@ form>div {
 }
 
 /* shopping cart styling */
-/*.cart {
+.cart {
   border: 1px solid #ccc;
   border-radius: 4px;
-}*/
+}
 
-/*.order-summary {
+.order-summary {
   list-style-type: none;
   padding-left: 0;
 }
@@ -251,94 +257,6 @@ form>div {
 .order-summary > li:last-of-type {
   border-bottom: none;
   font-weight: 700;
-}*/
-
-/*fxing burst images*/
-
-.burst_fix {
-display: flex;
-
-}
-
-/*Sun-burst left*/
-.sun-burst-left {
-width: 15%;
-height: 15%;
-}
-
-/*Sun-burst right*/
-.sun-burst-right {
-  width: 15%;
-  height: 15%;
-}
-
-
-/* 3 specialities fixed*/
-
-.family-style {
-padding-right: 5%;
-font-size: 2vw;
-}
-
-/*burger row */
-.burger-row {
-  display: flex;
-}
-
-/*text column */
-.text-col {
-  width: 50%;
-}
-
-/*burger image fixed*/
-.grab-fix {
-  width: 50%;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  padding-top: 4%;
-}
-
-/*gallery content*/
-
-.gallery-content {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-/*gallery image resize*/
-
-.gallery1 {
-width: 32%;
-height: 32%;
-}
-
-.gallery2 {
-width: 32%;
-height: 32%;
-}
-
-.gallery3 {
-width: 32%;
-height: 32%;
-}
-
-/*gallery image fit*/
-
-.gallery-image-fit {
-  display: flex;
-  justify-content: space-between;
-}
-
-/*three specialities on homepage*/
-
-.specialities {
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 
