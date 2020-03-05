@@ -1,5 +1,5 @@
 /*
-  STYLING 
+  STYLING
 */
 
 
@@ -132,4 +132,6 @@ input[type="text"] {
   padding-bottom: 10px;
 }
 
-
+text-area {
+  margin-bottom: 2em;
+}
