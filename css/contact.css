@@ -132,4 +132,15 @@ input[type="text"] {
   padding-bottom: 10px;
 }
 
+textarea {
+  resize: none;
+}
 
+.button-neutral {
+  position: relative;
+  top: 6em;
+}
+
+.content {
+  padding: 2.5em;
+}
