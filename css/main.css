@@ -133,11 +133,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 h4 {
@@ -159,6 +159,11 @@ p, ol, ul, .price {
 
 p {
   max-width: 36em;
+}
+
+.page-description {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .price {
