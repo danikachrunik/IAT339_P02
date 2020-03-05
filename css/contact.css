@@ -136,3 +136,8 @@ textarea {
   resize: none;
 }
 
+.button-neutral {
+position: relative;
+top: 6em;
+}
+
