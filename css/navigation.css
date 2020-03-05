@@ -21,18 +21,19 @@ header {
   display: inline-block;
   padding: 0.01em 0.1em;
   position: relative;
-  top: 24rem;
+  top: 28rem;
 }
 
 /*
   styles for logo in header ---------------------
 */
 
-.header-logo {
-  max-width: 30%;
+#header-logo {
+  max-width: 12rem;;
+  margin: 0.5rem 0 0 0;
 }
 
-.header-logo > img {
+#header-logo > img {
   max-height: 100%;
 }
 
@@ -55,29 +56,49 @@ header {
   max-height: 3em;
   margin: 2em;
   /* source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_header */
-  float: left;
+  float: none;
+  display: block;
   text-align: center;
+  border-bottom: 4px solid #000; /* fix so the hover effect doesn't change the size of the container */
+}
+
+.header-right {
+  margin-top: 3rem;
 }
 
 .link-nav:hover, .link-nav:focus, .selected {
   /* https://css-tricks.com/styling-underlines-web/ */
-  border-bottom: 4px solid #fee16d;
+  text-decoration: underline;
+}
+
+#header-logo:hover, #header-logo:focus {
+  border-bottom: none;
 }
 
 .bag {
   height: 30px;
   width: auto;
+  margin-top: -30px; /* bring baseline of image inline with text links*/
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
+/* nav style changes for larger screens */
+@media screen and (min-width: 740px) {
+  .link-nav {
+    float: left;
   }
 
-  .link-nav {
-    float: none;
+  .header-right {
+    float: right;
+  }
+
+  #header-logo {
+    float: left;
+  }
+
+  .link-nav:hover, .link-nav:focus, .selected {
+    /* https://css-tricks.com/styling-underlines-web/ */
+    text-decoration: none;
+    border-bottom: 4px solid #fee16d;
   }
 }
 
