@@ -177,7 +177,7 @@ p {
 
 img {
   width: 100%;
-/*  max-width: 36rem;*/
+  max-width: 36re
 }
 
 .logo {
@@ -195,13 +195,7 @@ img {
 /*
   COMBINED ELEMENTS -------------------
 */
-/*.product {
-  max-width: 30em;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}*/
+
 
 /* menu styling */
 

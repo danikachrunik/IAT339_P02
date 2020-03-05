@@ -1,216 +1,12 @@
-
+/*
+  menu styling -------------
+*/
 
 header {
   /* source: http://docs.layerswp.com/doc/how-to-make-slider-and-widget-backgrounds-responsive/ */
   background-image: url("../images/menu.jpg");
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
-body {
-  font-family: "Montserrat", sans-serif;
-  color: #000;
-}
-
-/* wrapper for body content so it doesn't go edge to edge like the header */
-
-
-.content {
-  padding: 1em;
-  /*max-width: 60rem;
-  margin: auto;*/
-}
-
-
-/*
-  Code block -------------------
-*/
-code {
-  display: block;
-  background-color: #000;
-  color: #fee16d;
-  padding: 1rem;
-  margin: 1rem auto;
-  font-size: 0.9em;
-}
-
-.code_tab {
-  margin: 1.5em;
-}
-
-/* bg to show elements that would be on a dark bg */
-.bg-for-light-elements {
-  background-color: #000;
-  width: 80%;
-}
-
-
-/*
-  INTERACTIVE ELEMENTS -------------------
-*/
-
-/* Styling for the in-text link */
-.in-text-link {
-  color: #000;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #fee16d;
-  text-decoration-color: #fee16d;
-}
-
-.in-text-link:hover, .in-text-link:active {
-  background-color: #fee16d;;
-}
-
-/* Styling for the navigation button */
-.btn {
-  display: inline-block;
-  padding: 0.6rem;
-  border-radius: 4px;
-  border: 2px solid #000;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  margin: 0.5em 0.5em;
-  min-width: 10em;
-  max-width: 12em;
-  text-decoration: none;
-}
-
-#sub-nav a {
-  color: #000;
-}
-
-#sub-nav a:hover, #sub-nav a:focus {
-  text-decoration: none;
-  background-color: #fee16d;
-}
-
-
-/* Styling for the other buttons */
-.button-neutral {
-  background-color: #000;
-  color: #fff;
-}
-
-.button-neutral:hover, .button-neutral:focus {
-  color: #fee16d;
-  border-color: #fee16d;
-}
-
-.button-cta {
-  background-color: #fee16d;
-  border-color: #fee16d;
-}
-
-.button-cta:hover, .button-CTA:focus {
-background-color: #fff;
-border-color: #000;
-}
-
-.input-label {
-
-}
-
-.text-box {
-  padding: 0.2rem;
-  margin-left: 0.8rem;
-}
-
-.radio-select, .checkbox, select {
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.img-link:hover, img-link:focus {
-  opacity:0.5;
-}
-
-
-/*
-  TEXT ELEMENTS -------------------
-*/
-h1, h2, h3, h4, h5, h6 {
-
-}
-
-h1 {
-  font-size: 3rem;
-  padding-top: 1rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.6rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-
-h6 {
-  font-size: 0.8rem;
-}
-
-p, ol, ul, .price {
-
-}
-
-p {
-  max-width: 36em;
-}
-
-.page-description {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.price {
-  float: right;
-}
-
-/*
-  IMAGE Elements -------------------
-*/
-
-img {
-  width: 100%;
-/*  max-width: 36rem;*/
-}
-
-.logo {
-
-}
-
-/* Source: https://www.w3schools.com/howto/howto_css_image_center.asp */
-.product-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/*
-  COMBINED ELEMENTS -------------------
-*/
-/*.product {
-  max-width: 30em;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}*/
-
-/* menu styling */
 .menu-section {
   margin-top: 6rem;
 }
@@ -226,71 +22,26 @@ img {
   flex: 1 1 12em;
 }
 
-/*payment form styling */
-/*.payment-form, .cart {
-  padding: 1rem;
-  margin: 1rem auto;
-  max-width: 48em;
-}*/
-
-form>div {
-  max-height: 6em;
-  margin-top: 1em;
+.product {
+  max-width: 40em;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2rem;
 }
 
-
-/*
-  FLEXBOX -------------------
-  source: https://jonibologna.com/blog/flexbox-cheatsheet
-*/
-
-.container {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+.product-img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding-bottom: 2rem;
 }
 
-.flex-item {
-  -webkit-flex: 1 1 12em;
-  -ms-flex: 1 1 12em;
-  flex: 1 1 12em;
+.btn {
+  display: inline-block;
+  float: right;
 }
-
-.nav-flex {
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-
-@media (min-width: 44em) {
-  nav.container {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-
-
 
 @media only screen and (max-width: 500px) {
 
-  .content {
-    padding-top: 70px;
-  }
-  .header-title {
-    font-size: 2em;
-  }
 }
