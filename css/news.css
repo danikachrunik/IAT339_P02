@@ -1,3 +1,9 @@
+header {
+  /* source: http://docs.layerswp.com/doc/how-to-make-slider-and-widget-backgrounds-responsive/ */
+  background-image: url("../images/open-cafe.jpg");
+}
+
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #000;
