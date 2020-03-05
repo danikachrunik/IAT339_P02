@@ -13,6 +13,9 @@ header {
   padding: 2em;
 }
 
+/*
+  styles for page title ---------------------
+*/
 .header-title {
   background-color: #000;
   display: inline-block;
@@ -21,9 +24,12 @@ header {
   top: 24rem;
 }
 
+/*
+  styles for logo in header ---------------------
+*/
+
 .header-logo {
   max-width: 30%;
-  padding-top: 1em;
 }
 
 .header-logo > img {
@@ -70,7 +76,7 @@ header {
     text-align: left;
   }
 
-  .header-right {
+  .link-nav {
     float: none;
   }
 }
