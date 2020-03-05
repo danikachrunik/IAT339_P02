@@ -1,0 +1,60 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.about-para {
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	max-width: 73em;
+}
+
+
+.cafe-image {
+  height: 75%;
+  object-fit: cover;
+  display: block;
+  
+}
+
+.cafe-fix {
+  height: fit-content;
+  width: 50%;
+}
+
+.information-block {
+	display: flex;
+}
+
+/*opening times para */
+
+.opening-para {
+	padding-left: 20px;
+	width: 50%;
+}
+
+.about-text {
+	padding-left: 0;
+}
+
+.times-para {
+  font-size: 20px;
+  padding-bottom: 4%;
+}
+
+.booking {
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	max-width: 73em;
+}
+
+
+.booking-image {
+  width: 100%;
+}
+
+.booking-fix {
+  height: fit-content;
+}
