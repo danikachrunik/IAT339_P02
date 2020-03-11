@@ -11,8 +11,10 @@ body {
   color: #000;
 }
 
+/*Intro paragrah */
+
 .about-para {
-	text-align: center;
+	/*text-align: center;*/
 	padding-left: 1em;
 	padding-right: 1em;
 	max-width: 73em;
