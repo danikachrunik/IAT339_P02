@@ -108,6 +108,10 @@ h2 {
   padding-bottom: 42px;
 }
 
+/*feedback introduction line*/
+.drop-line {
+  font-size: 2rem;
+}
 
 /*text fields styling*/
 
