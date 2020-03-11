@@ -10,7 +10,6 @@ header {
   min-height: 40rem;
   color: #fff;
   background-color: #000;
-  padding: 2em;
 }
 
 /*
@@ -22,24 +21,31 @@ header {
   padding: 0.01em 0.1em;
   position: relative;
   top: 28rem;
+  margin-left: 2rem;
 }
 
 /*
   styles for logo in header ---------------------
 */
-
-#header-logo, #footer-logo {
-  max-width: 12rem;;
-  margin: 1rem;
+#nav-logo, #footer-logo {
+  display: inline-block;
+  max-width: 12rem;
+  margin: 0;
 }
 
 /*
   Navigation -------------------
 */
-
-#menu-toggle > img {
+#menu-toggle {
   max-width: 44px;
   height: auto;
+  float: right;
+  margin-right: 2em;
+  margin-top: 3em;
+}
+
+.hidden {
+  display: none;
 }
 
 .nav-bar {
@@ -49,7 +55,6 @@ header {
   right: 0;
   left: 0;
   z-index: 5;
-  overflow: hidden;
 }
 
 .link-nav {
@@ -64,23 +69,12 @@ header {
   border-bottom: 4px solid #000; /* fix so the hover effect doesn't change the size of the container */
 }
 
-/* Dropdown styling is from IAT339 week7 lecture example */
-
-.header-right {
-  margin-top: 3rem;
-
-  display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-
-	-webkit-justify-content: space-around;
-	-ms-justify-content: space-around;
-	justify-content: space-around;
+.link-nav:focus {
+  /* source: https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome */
+  outline: none;
 }
+
+/* Dropdown styling is from IAT339 week7 lecture example */
 
 .box-item-nav {
 	-webkit-flex: 1 1 100%;
@@ -90,10 +84,11 @@ header {
 
 .link-nav:hover, .link-nav:focus, .selected {
   /* https://css-tricks.com/styling-underlines-web/ */
+  color: #fee16d;
   text-decoration: underline;
 }
 
-#header-logo:hover, #header-logo:focus {
+#nav-logo:hover, #header-logo:focus {
   border-bottom: none;
 }
 
@@ -105,6 +100,18 @@ header {
 
 /* nav style changes for larger screens */
 @media screen and (min-width: 905px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .header-right {
+    margin-top: 2rem;
+
+    display: -webkit-flex;
+  	display: -ms-flex;
+  	display: flex;
+  }
+
   .link-nav {
     float: left;
   }
@@ -131,35 +138,14 @@ header {
 /*
   Footer CSS --------------------------------------------------
 */
-
-/*footer logo
-*/
-.footer-logo {
-  width: 40%;
-}
-
-/*instagram */
-.insta {
-width: 10%;
-}
-
-/*facebook*/
-.face {
-  width: 10%;
-}
-
 #iat339_links, #footer {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
 
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 
   -webkit-justify-content: center;
   -ms-justify-content: center;
@@ -168,13 +154,20 @@ width: 10%;
 
 #iat339_links {
   background-color: #000;
-  height: 2em;
+  position: relative;
+  bottom: 0;
 }
 
-#footer {
-  height: 8rem;
+.footer-item {
+  -webkit-flex: 1 1 30%;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  margin: 0.5em;
 }
 
-#footer > div {
-  display: inline-block;
+/* social media logos */
+.insta, .face {
+  width: 45%;
+  padding: 0.2em;
+  max-width: 44px;
 }

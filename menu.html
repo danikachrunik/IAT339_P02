@@ -21,14 +21,19 @@
 
       <nav class="nav-bar">
         <!-- header logo -->
-        <a href="index.html" id="header-logo" class="link-nav">
-          <img src="images/logo.png" alt="sunnup logo">
-        </a>
+        <div id="nav-logo">
+          <a href="index.html" class="link-nav">
+            <img src="images/logo.png" alt="sunnup logo">
+          </a>
+        </div>
+
+        <!-- menu toggle -->
+        <div id="menu-toggle">
+          <img src="images/menu-btn.png" alt="menu toggle button">
+        </div>
+
         <!-- dropdown menu -->
-        <div id="menu" class="header-right">
-          <div id="menu-toggle" class="box-item-nav">
-            <img src="images/menu-btn.png" alt="menu toggle button">
-          </div>
+        <div id="menu" class="header-right hidden">
           <div class="box-item-nav">
             <a class="link-nav selected" href="menu.html">Menu</a>
           </div>
@@ -98,36 +103,31 @@
     <footer>
       <div id="footer">
         <!-- footer logo -->
-        <div class="flex-item">
+        <div class="footer-item">
           <a href="index.html">
-            <img class="footer-logo" src="images/logo_black.png" alt="sunnup logo, the word sunnup and an icon of a sun">
+            <img id="footer-logo" src="images/logo_black.png" alt="sunnup logo, the word sunnup and an icon of a sun">
           </a>
         </div>
+
         <!-- contact info -->
-        <div  class="flex-item">
-          <p><b>hello@sunnup.com <br> (778) 865-3007</b><p>
+        <div class="footer-item">
+          <p>hello@sunnup.com <br> (778) 865-3007<p>
         </div>
-        <!--   navigation links -->
-        <nav class="nav-links-footer flex-item">
-          <a href="#">Order online</a>
-          <a href="#">News</a>
-          <a href="#">Contact</a>
-        </nav>
+
         <!--   social media links -->
-       <div class="flex-item">
-         <p> For news and updates on our cafe <br> Follow us on:</p>
-         <img class="insta" src="images/instagram.png" alt="instagram logo">
-         <img class="face"  src="images/facebook.png" alt="facebook logo">
+       <div class="footer-item">
+          <img class="insta" src="images/instagram.png" alt="instagram logo">
+          <img class="face"  src="images/facebook.png" alt="facebook logo">
        </div>
      </div>
+
      <!-- links to style guide, citations, git hub-->
-     <div id="iat339_links">
-       <nav>
-         <a href="style_guide.html" target="_blank" class="link-nav">Style Guide</a>
-         <a href="citations.html" target="_blank" class="link-nav">Citations</a>
-         <a href="https://github.com/danikachrunik/IAT339_P02" target="_blank" class="link-nav">GitHub</a>
-       </nav>
-     </div>
+      <nav id="iat339_links">
+       <a href="style_guide.html" target="_blank" class="link-nav">Style Guide</a>
+       <a href="citations.html" target="_blank" class="link-nav">Citations</a>
+       <a href="https://github.com/danikachrunik/IAT339_P02" target="_blank" class="link-nav">GitHub</a>
+      </nav>
+
     </footer><!-- // FOOTER -->
 
     <script src="js/dropdown.js"></script>
