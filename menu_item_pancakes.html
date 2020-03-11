@@ -20,15 +20,35 @@
     <header>
 
       <nav class="nav-bar">
-        <a href="index.html" id="header-logo" class="link-nav">
-          <img src="images/logo.png" alt="sunnup logo">
-        </a>
-        <div class="header-right">
-          <a class="link-nav selected" href="menu.html">Menu</a>
-          <a class="link-nav" href="news.html">News</a>
-          <a class="link-nav" href="about.html">About</a>
-          <a class="link-nav" href="contact.html">Contact</a>
-          <a class="link-nav" href="cart.html"><img class="bag" src="images/bag.png" alt="cart"/></a>
+        <!-- header logo -->
+        <div id="nav-logo">
+          <a href="index.html" class="link-nav">
+            <img src="images/logo.png" alt="sunnup logo">
+          </a>
+        </div>
+
+        <!-- menu toggle -->
+        <div id="menu-toggle">
+          <img src="images/menu-btn.png" alt="menu toggle button" id="menu-toggle-icon">
+        </div>
+
+        <!-- dropdown menu -->
+        <div id="menu" class="header-right hidden">
+          <div class="box-item-nav">
+            <a class="link-nav" href="menu.html">Menu</a>
+          </div>
+          <div class="box-item-nav">
+            <a class="link-nav" href="news.html">News</a>
+          </div>
+          <div class="box-item-nav">
+            <a class="link-nav" href="about.html">About</a>
+          </div>
+          <div class="box-item-nav">
+            <a class="link-nav" href="contact.html">Contact</a>
+          </div>
+          <div class="box-item-nav">
+            <a class="link-nav" href="cart.html"><img class="bag" src="images/bag.png" alt="cart"/></a>
+          </div>
         </div>
       </nav>
 
@@ -79,29 +99,36 @@
 
     <!-- FOOTER -->
     <footer>
-      <!-- footer logo -->
-      <a href="index.html" class="width-change">
-        <img class="footer-logo" src="images/logo_black.png">
-      </a>
-      <!-- contact info -->
-      <div class="width-change">
-        <p> Sunnup provides exceptional brunch through a variety of dining and
-        take-out, that will make everyone happy. </p> <br>
-        <p> <b> hello@sunnup.com <br> (778) 865-3007</b><p>
-      </div>
-      <!--   navigation links -->
-      <nav class="width-change nav-links-footer">
-        <a href="#">Order online</a>
-        <a href="#">News</a>
-        <a href="#">Contact</a>
+      <div id="footer">
+        <!-- footer logo -->
+        <div class="footer-item">
+          <a href="index.html">
+            <img id="footer-logo" src="images/logo_black.png" alt="sunnup logo, the word sunnup and an icon of a sun">
+          </a>
+        </div>
+
+        <!-- contact info -->
+        <div class="footer-item">
+          <p>hello@sunnup.com <br> (778) 865-3007<p>
+        </div>
+
+        <!--   social media links -->
+       <div class="footer-item">
+          <img class="insta" src="images/instagram.png" alt="instagram logo">
+          <img class="face"  src="images/facebook.png" alt="facebook logo">
+       </div>
+     </div>
+
+     <!-- links to style guide, citations, git hub-->
+      <nav id="iat339_links">
+       <a href="style_guide.html" target="_blank" class="link-nav">Style Guide</a>
+       <a href="citations.html" target="_blank" class="link-nav">Citations</a>
+       <a href="https://github.com/danikachrunik/IAT339_P02" target="_blank" class="link-nav">GitHub</a>
       </nav>
 
-     <div class="width-change">
-      <p> For news and updates on our cafe <br> Follow us on:</p>
-      <img class="insta" src="images/instagram.png">
-      <img class="face"  src="images/facebook.png">
-     </div>
     </footer><!-- // FOOTER -->
+
+    <script src="js/dropdown.js"></script>
 
   </body>
 
