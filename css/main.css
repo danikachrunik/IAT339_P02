@@ -167,10 +167,6 @@ p {
   font-weight: 400;
 }
 
-/*.price {
-  float: right;
-}*/
-
 /*
   IMAGE Elements -------------------
 */
@@ -180,10 +176,6 @@ img {
   max-width: 36re
 }
 
-.logo {
-
-}
-
 /* Source: https://www.w3schools.com/howto/howto_css_image_center.asp */
 .product-img {
   display: block;
@@ -191,64 +183,16 @@ img {
   margin-right: auto;
 }
 
-
 /*
   COMBINED ELEMENTS -------------------
 */
 
-
-/* menu styling */
-
-/*.menu-section {
-  margin-top: 6rem;
-}
-
-.menu-section h3 {
-  padding-bottom: 0.5em;
-  border-bottom: 2px solid #ccc;
-}
-
-.flex-menu {
-  -webkit-flex: 1 1 12em;
-  -ms-flex: 1 1 12em;
-  flex: 1 1 12em;
-}*/
-
-/*payment form styling */
-/*.payment-form, .cart {
-  padding: 1rem;
-  margin: 1rem auto;
-  max-width: 48em;
-}*/
-
-form>div {
+form > div {
   max-height: 6em;
   margin-top: 1em;
 }
 
-/* shopping cart styling */
-/*.cart {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}*/
-
-/*.order-summary {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.order-summary > li {
-  padding: 1em 0;
-  border-bottom: 1px solid #ccc;
-}
-
-.order-summary > li:last-of-type {
-  border-bottom: none;
-  font-weight: 700;
-}*/
-
 /*fxing burst images*/
-
 .burst_fix {
 display: flex;
 
