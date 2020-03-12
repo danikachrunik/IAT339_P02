@@ -139,28 +139,6 @@ p {
 }
 
 /*
-  FORM Elements -------------------
-*/
-form > div {
-  max-height: 6em;
-  margin-top: 1em;
-}
-
-.input-label {
-
-}
-
-.text-box {
-  padding: 0.2rem;
-  margin-left: 0.8rem;
-}
-
-.radio-select, .checkbox, select {
-  margin: 1rem;
-  padding: 1rem;
-}
-
-/*
   IMAGE Elements -------------------
 */
 
