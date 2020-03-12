@@ -20,7 +20,7 @@
   margin-top: 6rem;
 }
 
-.menu-section h3 {
+.menu-section h2 {
   padding-bottom: 0.5em;
   border-bottom: 2px solid #ccc;
 }
@@ -28,7 +28,6 @@
 /*position for menu download*/
 .menu-download {
   position: absolute;
-
 }
 
 /*padding for breakfast*/
@@ -47,7 +46,8 @@
   margin: 2rem auto;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 2rem;
+  padding: 0 2rem;
+  position: relative; /* so that absolute position can be used on the btn */
 }
 
 .product-img {
@@ -58,9 +58,9 @@
 }
 
 .btn {
-  display: block;
-  float: right;
-  padding-bottom: 0.5em;
+  position: absolute; /* source: https://www.w3schools.com/css/css_positioning.asp */
+  right: 0.5rem;
+  bottom: 0.5rem;
 }
 
 /* ingredient callout on product pages */
@@ -77,3 +77,8 @@
 .details {
   float: right;
 }
+
+.product-desc {
+  line-height: 1.5em;
+  padding-bottom: 6em;
+ }
