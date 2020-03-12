@@ -11,64 +11,34 @@ body {
   color: #000;
 }
 
-/*Intro paragrah */
-
-.about-para {
-	/*text-align: center;*/
-	padding-left: 1em;
-	padding-right: 1em;
-	max-width: 73em;
-  font-size: 1.6 rem;
-  font-weight: 400;
+.container {
+  max-width: 70rem;
 }
 
-
-.cafe-image {
-  height: 75%;
-  object-fit: cover;
-  display: block;
-  
+h4 {
+  margin-top: 6rem;
 }
 
-.cafe-fix {
-  height: fit-content;
-  width: 50%;
+.flex-item {
+  -webkit-flex: 1 1 12rem;
+  -ms-flex: 1 1 12rem;
+  flex: 1 1 12rem;
+  margin-top: 2rem;
 }
 
-.information-block {
-	display: flex;
+ul {
+  list-style: none;
+  font-size: 1.3em;
+  line-height: 2em;
 }
 
-/*opening times para */
-
-.opening-para {
-	padding-left: 20px;
-	width: 50%;
+.final-img {
+  margin-bottom: 6rem;
 }
 
-.about-text {
-	padding-left: 0;
-}
-
-.times-para {
-  font-size: 20px;
-  padding-bottom: 4%;
-}
-
-.booking {
-	text-align: center;
-	padding-left: 1em;
-	padding-right: 1em;
-	max-width: 73em;
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-
-.booking-image {
-  width: 100%;
-}
-
-.booking-fix {
-  height: fit-content;
+/* nav style changes for medium screens */
+@media screen and (min-width: 700px) {
+  ul {
+    font-size: 1.6em;
+  }
 }

@@ -1,158 +1,64 @@
 /*
-  STYLING
+  CONTACT PAGE STYLING
 */
-
-
 header {
   /* source: http://docs.layerswp.com/doc/how-to-make-slider-and-widget-backgrounds-responsive/ */
   background-image: url("../images/squash.jpg");
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: black;
-  margin: 0;
-
-}
-
-/*Fixed header*/
-.nav-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 115px;
-  background-color: black;
-  position: sticky;
-  top: 0;
-}
-
-/*The logo*/
-.logo-height {
-  height: 50%;
-}
-
-/*navigation links*/
-.nav-links {
-  color: #FEE16D;
-  font-weight: 500;
-  font-size: 20px;
-  color: #1F3746;
-  display: flex;
-  align-items: center;
-}
-
-.nav-links > a {
-	 padding-right: 15px;
-	 text-decoration: none;
-	 color: white;
-}
-
-/*hovering navigation link*/
-a:hover {
-  color: #FEE16D;
-}
-
-/*highlight selected link*/
-.nav-links .current {
-  color: #FEE16D;
-}
-
-/*shopping cart */
-.cart {
-	height: 30px;
-}
-
-
-/*opening image*/
-.opening-image {
-  height: 100%;
-  width: 100%;
-  padding-bottom: 60px;
-}
-
-/*slogan on top of opening image */
-.first-image-slogan {
-  width: 333px;
-  height: 100px;
-  background-color: black;
-  position: absolute;
-  top: 519px;
-  margin-left: 20px;
-}
-
-
-/*uplifting taste buds sologan*/
-.questions {
-font-weight: 700;
-color: white;
-position: absolute;
-top: 519px;
-font-size: 17px;
-}
-/*
-uplifiting text size*/
-.questions-size {
-  margin-left: 20px;
-}
-
-/*Intro text1*/
-h1 {
-  padding-left: 20px;
-}
-
-/*Intro text2*/
-h2 {
-  padding-left: 20px;
-  padding-bottom: 42px;
-}
-
-/*feedback introduction line*/
-.drop-line {
-  font-size: 2rem;
-}
-
-
-/*feedback information*/
-
-.feedback-info {
-  font-size: 1.6rem;
-}
 /*text fields styling*/
-
-input[type="text"] {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 30%;
-}
-
-/*name fields styling*/
-
-.name {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #000000;
-}
-
-.card_name {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #000000;
-}
-.msg-name {
-  padding-bottom: 10px;
+input[type="text"], input[type="email"] {
+  border: 2px solid #ccc;
 }
 
 textarea {
   resize: none;
+  max-width: 100%;
+  border: 2px solid #ccc;
 }
 
-.button-neutral {
-position: relative;
-top: 6em;
+.text-box {
+  padding: 0.2rem;
+  margin-left: 0.8rem;
 }
 
+form {
+  padding-top: 6rem;
+  margin: 4rem auto;
+  max-width: 48em;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+/*
+  FLEXBOX -------------------
+  source: https://jonibologna.com/blog/flexbox-cheatsheet
+*/
+
+.container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+.flex-item {
+  -webkit-flex: 1 1 4em;
+  -ms-flex: 1 1 4em;
+  flex: 1 1 4em;
+  max-width: 90%;
+}
+
+.flex-item:last-of-type {
+  margin-top: 4rem;
+}
