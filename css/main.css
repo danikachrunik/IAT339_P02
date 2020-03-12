@@ -166,7 +166,13 @@ form > div {
 
 img {
   width: 100%;
-  max-width: 36re
+
+  border-radius: 4px;
+}
+
+/* large images */
+.full-image {
+  margin: 2rem auto;
 }
 
 /* Source: https://www.w3schools.com/howto/howto_css_image_center.asp */
@@ -186,29 +192,38 @@ img {
   display: none; /* hide on small screens */
 }
 
-/* 3 specialities fixed*/
-.family-style {
-  padding-right: 5%;
-  font-size: 2vw;
+.specialities {
+  -webkit-flex: 1 1 12rem;
+  -ms-flex: 1 1 12rem;
+  flex: 1 1 12rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-/*burger row */
-.burger-row {
-  display: flex;
+/* grab and go */
+.grab {
+  padding: 2rem;
+  background-color: #fee16d;
+  border-radius: 4px;
 }
 
-/*text column */
-.text-col {
-  width: 50%;
+.grab-item {
+  -webkit-flex: 1 1 20rem;
+  -ms-flex: 1 1 20rem;
+  flex: 1 1 20rem;
 }
 
-/*burger image fixed*/
-.grab-fix {
-  width: 50%;
+.grab-item > img {
+  min-width: 20rem;
+  max-width: 30rem;
 }
 
 .gallery > h2, .gallery > p {
   padding-left: 2rem;
+}
+
+.gallery > p, .grab-item > p {
+  max-width: 20rem;
 }
 
 /*gallery image resize*/
@@ -219,13 +234,6 @@ img {
   min-width: 20rem;
   max-width: 30%;
   margin: 1rem;
-}
-
-/*three specialities on homepage*/
-.specialities {
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 /*
@@ -254,12 +262,6 @@ img {
   align-content: center;
 }
 
-.flex-item {
-  -webkit-flex: 1 1 12em;
-  -ms-flex: 1 1 12em;
-  flex: 1 1 12em;
-}
-
 /* nav style changes for medium screens */
 @media screen and (min-width: 700px) {
 
@@ -285,6 +287,27 @@ img {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+
+  .grab {
+
+  }
+
+  .grab-item > h2, .gallery > h2 {
+    font-size: 4em;
+  }
+
+  .grab-item > p, .gallery > p {
+    font-size: 1.4em;
+  }
+
+  .specialities {
+    margin-top: 6rem;
+  }
+
+  /* large images */
+  .full-image {
+    margin: 4rem 0;
   }
 }
 
