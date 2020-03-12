@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunnup - Style Guide</title>
 
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/cart.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
   </head>
@@ -57,16 +59,6 @@
 
     <div class="content">
 
-      <section id="sub-nav">
-        <a class="btn flex-item" href="#interactive_elements">Interactive Elements</a>
-        <a class="btn flex-item" href="#text_elements">Text Elements</a>
-        <a class="btn flex-item" href="#image_elements">Image Elements</a>
-        <a class="btn flex-item" href="#combined_elements">Combined Elements</a>
-        <!--<a class="link-nav btn flex-item" href="product_listing.html">Product Listing Template</a>
-        <a class="link-nav btn flex-item" href="checkout.html">Checkout Template</a>-->
-        <a class="link-nav btn flex-item" href="#citations">Citations</a>
-      </section>
-
         <!-- INTERACTIVE ELEMENTS SECTION // -->
         <section id="interactive_elements">
 
@@ -88,24 +80,6 @@
 
           </section>
 
-          <!-- Navigation Button -->
-          <section class="element">
-
-            <h3>Navigation Link</h3>
-
-            <h4>CSS selector:</h4>
-            <p>.link-nav btn</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="link-nav btn"&gt;Page Name&lt;/a&gt;</code>
-
-            <h4>Rendered element:</h4>
-            <div class="bg-for-light-elements">
-              <a class="link-nav btn" href="#">Nav Link</a>
-            </div>
-
-          </section>
-
           <!-- Neutral Button -->
           <section class="element">
 
@@ -120,7 +94,8 @@
             </code>
 
             <h4>Rendered element:</h4>
-            <button class="button-neutral btn">Neutral Button</button>
+            <!--inline styling only for styleguide to overrride positioning -->
+            <button class="button-neutral btn" style="position: static">Neutral Button</button>
 
           </section>
 
@@ -138,7 +113,7 @@
             </code>
 
             <h4>Rendered element:</h4>
-            <button class="button-cta btn">Exciting Button</button>
+            <button class="button-cta btn" style="position: static">Exciting Button</button>
 
           </section>
 
@@ -408,7 +383,7 @@
             </code>
 
             <h4>Rendered element:</h4>
-            <img class="product-img" src="images/soup.jpg" alt="A healthy and delicious bowl of soup.">
+            <img class="product-img" src="images/first-image.jpg" alt="A healthy and delicious bowl of soup.">
           </section>
 
         </section> <!-- // TEXT ELEMENTS SECTION -->
@@ -430,7 +405,7 @@
                 <span class="code_tab"></span>&lt;h4>Product Name&lt;/h4&gt;<br><br>
                 <span class="code_tab"></span>&lt;span class="price">$0.00&lt;/span&gt;<br>
                 <span class="code_tab"></span>&lt;p class="product-description">Detailed product description that calls out any allergens. Icons for vegan and gluten free.&lt;/p&gt;<br>
-                <span class="code_tab"></span>&lt;img src="images/bowl_2.jpg" alt="A healthy grainbowl with all your selected toppings" class="product-image"&gt;<br><br>
+                <span class="code_tab"></span>&lt;img src="images/menu.jpg" alt="A healthy grainbowl with all your selected toppings" class="product-image"&gt;<br><br>
               &lt;/div&gt;
             </code>
 
@@ -440,7 +415,7 @@
               <h4>Product Name</h4>
               <span class="price">$0.00</span>
               <p class="product-description">Detailed product description that calls out any allergens. Icons for vegan and gluten free.</p>
-              <img class="product-img" src="images/soup.jpg" alt="A healthy bowl of soup with all your selected toppings">
+              <img class="product-img" src="images/menu.jpg" alt="A healthy bowl of soup with all your selected toppings">
             </div>
 
           </section><!-- // PRODUCT LISTING -->
@@ -575,8 +550,8 @@
                 </div>
 
                 <div class="flex-item">
-                  <button class="button-neutral btn">Clear form</button>
-                  <button class="button-cta btn">Place Order</button>
+                  <button class="button-neutral btn"style="position: static;">Clear form</button>
+                  <button class="button-cta btn" style="position: static;">Place Order</button>
                 </div>
 
               </form>
@@ -619,22 +594,13 @@
                 <li class="bold-text">Total <span class="price">$26.25</span></p>
               </ol>
 
-              <button class="button-neutral btn">Clear Cart</button>
-              <button class="button-cta btn">Continue</button>
+              <button class="button-neutral btn" style="position: static;">Clear Cart</button>
+              <button class="button-cta btn" style="position: static;">Continue</button>
             </section>
 
           </section><!-- // CHECKOUT CART -->
 
         </section><!-- // COMBINED ELEMENTS SECTION -->
-
-        <!-- CITATIONS -->
-        <section id="citations">
-          <h2>Citations</h2>
-          <ul>
-            <li>Montserrat [Fonts]. Designed by Julia Ulanovsky at ZkySky. Retrieved from: <a class="in-text-link" target="_blank" href="https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat">Google Fonts</a></li>
-
-          </ul>
-        </section><!-- // CITATIONS SECTION -->
 
         </div><!-- end of content -->
 

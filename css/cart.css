@@ -29,6 +29,11 @@ form>div {
   margin-top: 1em;
 }
 
+input[type="text"], input[type="email"], input[type="number"], select {
+  border: 2px solid #ccc;
+  margin: 2px 0;
+}
+
 /* shopping cart styling */
 .cart {
   border: 1px solid #ccc;
@@ -74,7 +79,7 @@ form>div {
 }
 
 .flex-item {
-  -webkit-flex: 1 1 12em;
-  -ms-flex: 1 1 12em;
-  flex: 1 1 12em;
+  -webkit-flex: 1 1 10em;
+  -ms-flex: 1 1 10em;
+  flex: 1 1 10em;
 }
