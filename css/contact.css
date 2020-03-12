@@ -108,7 +108,17 @@ h2 {
   padding-bottom: 42px;
 }
 
+/*feedback introduction line*/
+.drop-line {
+  font-size: 2rem;
+}
 
+
+/*feedback information*/
+
+.feedback-info {
+  font-size: 1.6rem;
+}
 /*text fields styling*/
 
 input[type="text"] {
@@ -122,14 +132,14 @@ input[type="text"] {
 
 .name {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
   color: #000000;
 }
 
 .card_name {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
   color: #000000;
 }

@@ -11,11 +11,15 @@ body {
   color: #000;
 }
 
+/*Intro paragrah */
+
 .about-para {
-	text-align: center;
+	/*text-align: center;*/
 	padding-left: 1em;
 	padding-right: 1em;
 	max-width: 73em;
+  font-size: 1.6 rem;
+  font-weight: 400;
 }
 
 
@@ -56,6 +60,8 @@ body {
 	padding-left: 1em;
 	padding-right: 1em;
 	max-width: 73em;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 

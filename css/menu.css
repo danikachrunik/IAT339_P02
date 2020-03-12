@@ -16,6 +16,17 @@ header {
   border-bottom: 2px solid #ccc;
 }
 
+/*position for menu download*/
+.menu-download {
+  position: absolute;
+
+}
+
+/*padding for breakfast*/
+.breakfast-padding {
+  padding-top: 1em;
+}
+
 .flex-menu {
   -webkit-flex: 1 1 12em;
   -ms-flex: 1 1 12em;
