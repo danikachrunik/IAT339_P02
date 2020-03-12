@@ -82,13 +82,16 @@ header {
 	flex: 1 1 100%;
 }
 
-.link-nav:hover, .link-nav:focus, .selected {
-  /* https://css-tricks.com/styling-underlines-web/ */
+.link-nav:hover, .selected {
   color: #fee16d;
   text-decoration: underline;
 }
 
-#nav-logo:hover, #header-logo:focus {
+.link-nav:focus {
+  text-decoration: underline;
+}
+
+#nav-logo:hover > a, #header-logo:focus > a {
   border-bottom: none;
 }
 
