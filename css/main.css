@@ -15,7 +15,7 @@ body {
 }
 
 /*
-  Code block -------------------
+  Code blocks in styleguide -------------------
 */
 code {
   display: block;
@@ -97,20 +97,6 @@ background-color: #fff;
 border-color: #000;
 }
 
-.input-label {
-
-}
-
-.text-box {
-  padding: 0.2rem;
-  margin-left: 0.8rem;
-}
-
-.radio-select, .checkbox, select {
-  margin: 1rem;
-  padding: 1rem;
-}
-
 .img-link:hover, img-link:focus {
   opacity:0.5;
 }
@@ -149,8 +135,29 @@ p {
 }
 
 .page-description {
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.4em;
+}
+
+/*
+  FORM Elements -------------------
+*/
+form > div {
+  max-height: 6em;
+  margin-top: 1em;
+}
+
+.input-label {
+
+}
+
+.text-box {
+  padding: 0.2rem;
+  margin-left: 0.8rem;
+}
+
+.radio-select, .checkbox, select {
+  margin: 1rem;
+  padding: 1rem;
 }
 
 /*
@@ -169,26 +176,14 @@ img {
   margin-right: auto;
 }
 
-form > div {
-  max-height: 6em;
-  margin-top: 1em;
-}
-
-/*fxing burst images*/
-.burst_fix {
-  display: flex;
-}
-
 /*Sun-burst left*/
 .sun-burst-left {
-  width: 15%;
-  height: 15%;
+  display: none; /* hide on small screens */
 }
 
 /*Sun-burst right*/
 .sun-burst-right {
-  width: 15%;
-  height: 15%;
+  display: none; /* hide on small screens */
 }
 
 /* 3 specialities fixed*/
@@ -212,40 +207,18 @@ form > div {
   width: 50%;
 }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  padding-top: 4%;
-}
-
-/*gallery content*/
-
-.gallery-content {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.gallery > h2, .gallery > p {
+  padding-left: 2rem;
 }
 
 /*gallery image resize*/
-.gallery1 {
-  width: 32%;
-  height: 32%;
-}
-
-.gallery2 {
-  width: 32%;
-  height: 32%;
-}
-
-.gallery3 {
-  width: 32%;
-  height: 32%;
-}
-
-/*gallery image fit*/
-.gallery-image-fit {
-  display: flex;
-  justify-content: space-between;
+.gallery-img {
+  -webkit-flex: 1 1 20rem;
+  -ms-flex: 1 1 20rem;
+  flex: 1 1 20rem;
+  min-width: 20rem;
+  max-width: 30%;
+  margin: 1rem;
 }
 
 /*three specialities on homepage*/
@@ -275,6 +248,10 @@ form > div {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
+
+  -webkit-align-content: center;
+  -ms-align-content: center;
+  align-content: center;
 }
 
 .flex-item {
@@ -286,9 +263,34 @@ form > div {
 /* nav style changes for medium screens */
 @media screen and (min-width: 700px) {
 
+  .page-description {
+    font-size: 1.6em;
+  }
+
+  /*Sun-burst left*/
+  .sun-burst-left {
+    display: inline-block;
+    width: 15%;
+    height: 15%;
+  }
+
+  /*Sun-burst right*/
+  .sun-burst-right {
+    display: inline-block;
+    width: 15%;
+    height: 15%;
+  }
+
+  .container {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 /* nav style changes for larger screens */
 @media screen and (min-width: 900px) {
-
+  .page-description {
+    font-size: 2em;
+  }
 }
