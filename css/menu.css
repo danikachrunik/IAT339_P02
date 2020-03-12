@@ -1,7 +1,8 @@
 /*
-  menu styling -------------
+  Menu and Product page styling -------------
 */
 
+/* header images to swap with js */
 .menu {
   background-image: url("../images/menu.jpg");
 }
@@ -13,6 +14,7 @@
 .toast {
   background-image: url("../images/toast.png");
 }
+
 
 .menu-section {
   margin-top: 6rem;
@@ -56,6 +58,22 @@
 }
 
 .btn {
-  display: inline-block;
+  display: block;
+  float: right;
+  padding-bottom: 0.5em;
+}
+
+/* ingredient callout on product pages */
+.ingredients {
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5em;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.details {
   float: right;
 }

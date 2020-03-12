@@ -2,21 +2,17 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: "Montserrat", sans-serif;
   color: #000;
 }
 
 /* wrapper for body content so it doesn't go edge to edge like the header */
-
-
 .content {
   padding: 1em;
   /*max-width: 60rem;
   margin: auto;*/
 }
-
 
 /*
   Code block -------------------
@@ -120,14 +116,9 @@ border-color: #000;
   opacity:0.5;
 }
 
-
 /*
   TEXT ELEMENTS -------------------
 */
-h1, h2, h3, h4, h5, h6 {
-
-}
-
 h1 {
   font-size: 3rem;
   padding-top: 1rem;
@@ -152,10 +143,6 @@ h5 {
 
 h6 {
   font-size: 0.8rem;
-}
-
-p, ol, ul, .price {
-
 }
 
 p {
@@ -194,14 +181,13 @@ form > div {
 
 /*fxing burst images*/
 .burst_fix {
-display: flex;
-
+  display: flex;
 }
 
 /*Sun-burst left*/
 .sun-burst-left {
-width: 15%;
-height: 15%;
+  width: 15%;
+  height: 15%;
 }
 
 /*Sun-burst right*/
@@ -210,12 +196,10 @@ height: 15%;
   height: 15%;
 }
 
-
 /* 3 specialities fixed*/
-
 .family-style {
-padding-right: 5%;
-font-size: 2vw;
+  padding-right: 5%;
+  font-size: 2vw;
 }
 
 /*burger row */
@@ -248,37 +232,33 @@ font-size: 2vw;
 }
 
 /*gallery image resize*/
-
 .gallery1 {
-width: 32%;
-height: 32%;
+  width: 32%;
+  height: 32%;
 }
 
 .gallery2 {
-width: 32%;
-height: 32%;
+  width: 32%;
+  height: 32%;
 }
 
 .gallery3 {
-width: 32%;
-height: 32%;
+  width: 32%;
+  height: 32%;
 }
 
 /*gallery image fit*/
-
 .gallery-image-fit {
   display: flex;
   justify-content: space-between;
 }
 
 /*three specialities on homepage*/
-
 .specialities {
   display: flex;
   align-items: center;
   text-align: center;
 }
-
 
 /*
   FLEXBOX -------------------
