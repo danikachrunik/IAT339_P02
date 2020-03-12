@@ -2,9 +2,16 @@
   menu styling -------------
 */
 
-header {
-  /* source: http://docs.layerswp.com/doc/how-to-make-slider-and-widget-backgrounds-responsive/ */
+.menu {
   background-image: url("../images/menu.jpg");
+}
+
+.pancakes {
+  background-image: url("../images/crepe.png");
+}
+
+.toast {
+  background-image: url("../images/toast.png");
 }
 
 .menu-section {
@@ -51,8 +58,4 @@ header {
 .btn {
   display: inline-block;
   float: right;
-}
-
-@media only screen and (max-width: 500px) {
-
 }
