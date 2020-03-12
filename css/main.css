@@ -10,8 +10,8 @@ body {
 /* wrapper for body content so it doesn't go edge to edge like the header */
 .content {
   padding: 1em;
-  /*max-width: 60rem;
-  margin: auto;*/
+  max-width: 80rem;
+  margin: auto;
 }
 
 /*
@@ -35,7 +35,6 @@ code {
   background-color: #000;
   width: 80%;
 }
-
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -170,10 +169,6 @@ img {
   margin-right: auto;
 }
 
-/*
-  COMBINED ELEMENTS -------------------
-*/
-
 form > div {
   max-height: 6em;
   margin-top: 1em;
@@ -264,7 +259,6 @@ form > div {
   FLEXBOX -------------------
   source: https://jonibologna.com/blog/flexbox-cheatsheet
 */
-
 .container {
   display: -webkit-flex;
   display: -ms-flex;
@@ -289,26 +283,12 @@ form > div {
   flex: 1 1 12em;
 }
 
-.nav-flex {
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+/* nav style changes for medium screens */
+@media screen and (min-width: 700px) {
+
 }
 
-@media (min-width: 44em) {
-  nav.container {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
+/* nav style changes for larger screens */
+@media screen and (min-width: 900px) {
 
-@media only screen and (max-width: 500px) {
-
-  .content {
-    padding-top: 70px;
-  }
-  .header-title {
-    font-size: 2em;
-  }
 }
