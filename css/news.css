@@ -3,41 +3,22 @@ header {
   background-image: url("../images/open-cafe.jpg");
 }
 
-
-body {
-  font-family: "Montserrat", sans-serif;
-  color: #000;
+.content {
+  max-width: 60rem;
 }
-
-.healthy {
-	display: flex;
-	text-align: center;
-}
-
-/*news heading*/ 
 
 h2 {
-	padding-left: 1em;
-	padding-bottom: 0em;
 	text-align: center;
 }
 
 /*news subtittle date*/
-
-.date1 {
-	padding-left: 1em;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+time {
+	display: block;
+	margin: 1em auto;
 }
 
-.french-toast-para {
-	padding-left: 1em;
-	max-width: 73em;
-	text-align: center;
-}
-
-.half-image-text {
-padding-left:5%;
-padding-right: 5%;
+article {
+  padding-bottom: 2rem;
+  margin-bottom: 6rem;
+  border-bottom: 2px solid #ccc;
 }

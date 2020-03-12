@@ -166,7 +166,6 @@ form > div {
 
 img {
   width: 100%;
-
   border-radius: 4px;
 }
 
@@ -287,10 +286,6 @@ img {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-  }
-
-  .grab {
-
   }
 
   .grab-item > h2, .gallery > h2 {
