@@ -82,9 +82,3 @@
   line-height: 1.5em;
   padding-bottom: 6em;
  }
-
- @media screen and (min-width: 700px) {
-   #download-menu {
-    float: right;
-   }
- }
